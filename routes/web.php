@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AboutUsPage;
 use App\Livewire\Auth\ForgotPasswordPage;
 use App\Livewire\Auth\LoginPage;
 use App\Livewire\Auth\RegisterPage;
@@ -9,6 +10,7 @@ use App\Livewire\MenuPage;
 use App\Livewire\ShopPage;
 use App\Livewire\CartPage;
 use App\Livewire\CheckoutPage;
+use App\Livewire\ContactUsPage;
 use App\Livewire\HomePage;
 use App\Livewire\MyOrdersPage;
 use App\Livewire\ProductDetailPage;
@@ -32,6 +34,8 @@ Route::get('/', HomePage::class);
 Route::get('/menu', MenuPage::class);
 Route::get('/shop', ShopPage::class);
 Route::get('/cart', CartPage::class);
+Route::get('/aboutUs', AboutUsPage::class);
+Route::get('/contactUs', ContactUsPage::class);
 Route::get('/products/{product}', ProductDetailPage::class);
 Route::get('/checkout', CheckoutPage::class);
 Route::get('/my-orders' , MyOrdersPage::class);
