@@ -4,10 +4,10 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class CategoriesPage extends Component
+class CheckoutPage extends Component
 {
     public function render()
     {
-        return view('livewire.categories-page');
+        return view('livewire.checkout-page');
     }
 }
